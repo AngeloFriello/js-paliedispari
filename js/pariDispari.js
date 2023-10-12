@@ -21,6 +21,12 @@ console.log(somma)
 // - stabiliamo se la somma e pari o dispari
 if ((somma % 2) === 0 && PariDispariUtente === 'pari'){
     console.log('hai vinto')
+}else if((somma % 2) != 0 && PariDispariUtente === 'pari'){
+    console.log('hai perso')    
+}else if((somma % 2) != 0 && PariDispariUtente === 'dispari'){
+    console.log('hai vinto')
+}else if((somma % 2) === 0 && PariDispariUtente === 'dispari'){
+    console.log('hai perso') 
 }
 //     - stabiliamo una condizione per decida in base alla somma e alla scelta dell'utente il vincitore
 // - scegliamo il vincitore
