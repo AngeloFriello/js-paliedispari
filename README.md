@@ -11,7 +11,7 @@
 
 # Pari e Dispari
 
-- chiediamo di inserire un numero all'utente
+- chiediamo di inserire un numero da 1 a 5 all'utente
     - creamo un prompt per chiedere all'utente il numero
 - chiediamo di scegliere tra pari e dispari all'utente
     - creamo un prompt per chiedere all'utente pari o dispari
