@@ -1,6 +1,6 @@
 // - chiediamo di inserire un numero da 1 a 5 all'utente
 //     - creamo un prompt per chiedere all'utente il numero
-const numeroUtente = prompt('scegli un numero da 1 a 5')
+const numeroUtente =  parseInt(prompt('scegli un numero da 1 a 5'))
 console.log(numeroUtente)
 // - chiediamo di scegliere tra pari e dispari all'utente
 //     - creamo un prompt per chiedere all'utente pari o dispari
@@ -19,5 +19,8 @@ console.log(numPc)
 const somma = (numPc) + (numeroUtente)
 console.log(somma)
 // - stabiliamo se la somma e pari o dispari
+if ((somma % 2) === 0 && PariDispariUtente === 'pari'){
+    console.log('hai vinto')
+}
 //     - stabiliamo una condizione per decida in base alla somma e alla scelta dell'utente il vincitore
 // - scegliamo il vincitore
