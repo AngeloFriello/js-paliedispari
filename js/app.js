@@ -14,9 +14,9 @@ console.log(wordUtent)
 
 
 
-function reverseString(wordUtent) {
+function reverseString(parola) {
     // Usa il metodo split per restituire un nuovo array
-    let splitString = wordUtent.split("");
+    let splitString = parola.split("");
     console.log(splitString)
     // Usa il metodo reverse per invertire l'array appena creato
     let reverseArray = splitString.reverse();
@@ -24,8 +24,20 @@ function reverseString(wordUtent) {
     // Usa il metodo join per unire tutti gli elementi della stringa in un array
     let joinArray = reverseArray.join(""); 
     console.log(joinArray)
-    //Step 4. Restituisci la stringa invertita
-    return joinArray;
+    // Restituisci la stringa invertita
+    if(joinArray === parola){
+        return true
+    }else{
+        return false
+    }
 }
- 
+
 reverseString(wordUtent);
+
+if(reverseString(wordUtent)){
+    console.log('la tua parola è palindroma')
+}else{
+    console.log('la tua parola non è palindroma')
+}
+
+
